@@ -1,0 +1,81 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgb(7, 80, 164);
+  color: whitesmoke;
+  padding-right: 10px;
+  padding-top: 15px;
+}
+
+.dashboard-header {
+  margin-left: 20px;
+  font-size: 10px;
+  padding-right: 10px;
+}
+
+ul {
+  list-style: none;
+  margin-left: -18px;
+}
+
+.li-icon,
+.search-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  gap: 0.8rem;
+}
+
+/* ***************************************** */
+.main-content {
+  padding: 30px 15px;
+}
+
+.main-content .header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.search-field {
+  background-color: rgba(111, 125, 138, 0.3);
+  height: 25px;
+  border-radius: 12.5px;
+
+  flex: 1;
+}
+
+.notification-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 3rem;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.profile-small {
+  margin-left: 20px;
+  height: 40px;
+  width: 40px;
+  background-color: violet;
+  padding: 10px;
+  border-radius: 60%;
+  margin-top: 0;
+}
+
+#profile-name {
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-top: 0;
+}

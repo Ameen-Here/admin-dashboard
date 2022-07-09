@@ -8,7 +8,8 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-h4 {
+h4,
+h5 {
   margin: 0;
   padding: 0;
 }
@@ -157,5 +158,48 @@ ul {
 }
 
 .container-emoji {
+  align-self: flex-end;
+}
+
+.announcement p,
+.trending p {
+  font-size: 14px;
+  margin: 2px;
+}
+
+.announcement h5 {
+  font-weight: 800;
+}
+
+.announcement-info,
+.trending-info {
+  padding: 30px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.announcement,
+.trending {
+  padding: 10px 0;
+}
+
+.announcement {
+  border-bottom: 1px rgba(112, 109, 109, 0.5) solid;
+}
+
+.announcement:last-child {
+  border: none;
+}
+
+.hashtag {
+  font-size: 25px;
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+}
+
+.trending p {
   align-self: flex-end;
 }

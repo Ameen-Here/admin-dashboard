@@ -1,13 +1,17 @@
 body {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  gap: 1rem;
+
   margin: 0;
   padding: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+h4 {
+  margin: 0;
+  padding: 0;
+}
 .dashboard {
   display: flex;
   flex-direction: column;
@@ -39,13 +43,13 @@ ul {
 
 /* ***************************************** */
 .main-content {
-  padding: 30px 15px;
+  padding-top: 30px;
 }
 
 .main-content .header {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .search-field {
@@ -66,10 +70,11 @@ ul {
 
 .profile-small {
   margin-left: 20px;
-  height: 40px;
-  width: 40px;
+  height: 20px;
+  width: 25px;
+  margin-right: 10px;
   background-color: violet;
-  padding: 10px;
+  padding: 5px;
   border-radius: 60%;
   margin-top: 0;
 }
@@ -78,4 +83,79 @@ ul {
   font-weight: 800;
   font-size: 1.2rem;
   margin-top: 0;
+}
+
+.profile-big {
+  height: 50px;
+  width: 50px;
+  background-color: violet;
+  border-radius: 60%;
+  padding: 20px;
+}
+
+.profile-details {
+  display: grid;
+  grid-template-columns: 150px 400px;
+  font-weight: 700;
+}
+
+.profile-intro p {
+  margin: 5px;
+}
+
+.profile-action button {
+  margin: 15px;
+  width: 5rem;
+  padding: 0.5rem;
+  border-radius: 15px;
+  background-color: rgb(7, 80, 164);
+  color: whitesmoke;
+  border-color: white;
+}
+
+/* ************* */
+
+.search-bar,
+.profile-details {
+  margin-left: 40px;
+  padding-bottom: 15px;
+}
+
+.main-section {
+  background-color: rgba(111, 125, 138, 0.3);
+  padding: 30px 60px 40px 40px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 25px;
+}
+
+.note-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px;
+  grid-auto-rows: 300px;
+  gap: 10px;
+}
+
+.container {
+  padding: 40px;
+  padding-bottom: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border-left: 10px rgb(154, 154, 3) solid;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.container p {
+  font-weight: 100;
+  color: gray;
+  margin: 2px;
+}
+
+.container-emoji {
+  align-self: flex-end;
 }
